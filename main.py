@@ -1,72 +1,34 @@
-
-#  MIT License
-#
-#  Copyright (c) 2019-present Dan <https://github.com/delivrance>
-#
-#  Permission is hereby granted, free of charge, to any person obtaining a copy
-#  of this software and associated documentation files (the "Software"), to deal
-#  in the Software without restriction, including without limitation the rights
-#  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-#  copies of the Software, and to permit persons to whom the Software is
-#  furnished to do so, subject to the following conditions:
-#
-#  The above copyright notice and this permission notice shall be included in all
-#  copies or substantial portions of the Software.
-#
-#  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-#  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-#  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-#  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-#  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-#  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-#  SOFTWARE
-
-
 import os
-from config import Config
 from pyrogram import Client, idle
-import asyncio, logging
-import tgcrypto
-from pyromod import listen
-from logging.handlers import RotatingFileHandler
+from flask import Flask
+import asyncio
+import threading
 
-LOGGER = logging.getLogger(__name__)
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(name)s - %(message)s",
-    datefmt="%d-%b-%y %H:%M:%S",
-    handlers=[
-        RotatingFileHandler(
-            "log.txt", maxBytes=5000000, backupCount=10
-        ),
-        logging.StreamHandler(),
-    ],
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Bot is alive!"
+
+bot = Client(
+    "StarkBot",
+    bot_token=os.environ["BOT_TOKEN"],
+    api_id=int(os.environ["API_ID"]),
+    api_hash=os.environ["API_HASH"],
+    plugins=dict(root="plugins"),
+    workers=50,
 )
 
-# Auth Users
-AUTH_USERS = [ int(chat) for chat in Config.AUTH_USERS.split(",") if chat != '']
+async def start_bot():
+    await bot.start()
+    print("Bot started")
+    await idle()
+    await bot.stop()
 
-# Prefixes 
-prefixes = ["/", "~", "?", "!"]
+def run_flask():
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
 
-plugins = dict(root="plugins")
-if __name__ == "__main__" :
-    bot = Client(
-        "StarkBot",
-        bot_token=Config.BOT_TOKEN,
-        api_id=Config.API_ID,
-        api_hash=Config.API_HASH,
-        sleep_threshold=20,
-        plugins=plugins,
-        workers = 50
-    )
-    
-    async def main():
-        await bot.start()
-        bot_info  = await bot.get_me()
-        LOGGER.info(f"<--- @{bot_info.username} Started (c) AublicXRobot --->")
-        await idle()
-    
-    asyncio.get_event_loop().run_until_complete(main())
-    LOGGER.info(f"<---Bot Stopped-->")
-
+if __name__ == "__main__":
+    threading.Thread(target=run_flask).start()
+    asyncio.run(start_bot())
