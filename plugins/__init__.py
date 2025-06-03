@@ -30,7 +30,7 @@ async def Start_msg(bot: stark, m: Message):
             "Press **/mgconcept** for **MG Concept App**..\n\n"
             "Press **/down** for **Downloading URL lists**..\n\n"
             "Press **/forward** to **Forward from one channel to others**..\n\n"
-            "**𝗕𝗼𝘁 𝗢𝘄𝗻𝗲𝗿 : YASH**"
+            "**𝗕𝗼𝘁 𝗢𝘄𝗻𝗲𝗿 : @Aublic**"
         )
     )
 
