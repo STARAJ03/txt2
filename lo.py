@@ -224,7 +224,7 @@ async def account_login(bot: Client, m: Message):
 async def main():
         await bot.start()
         bot_info  = await bot.get_me()
-        LOGGER.info(f"<--- @{bot_info.username} Started (c) STARKBOT --->")
+        LOGGER.info(f"<--- @{bot_info.username} Started (c) AublicXRobot --->")
         await idle()
 asyncio.get_event_loop().run_until_complete(main())
 LOGGER.info(f"<---Bot Stopped-->")
