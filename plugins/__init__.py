@@ -8,6 +8,12 @@ import sys
 
 @stark.on_message(filters.command(["start"]) & ~filters.edited)
 async def Start_msg(bot: stark , m: Message):
+    await bot.send_photo(
+        m.chat.id,
+        photo="https://i.ibb.co/cSyLcHNz/Chat-GPT-Image-Jun-3-2025-03-16-31-PM.png",
+        caption=caption,
+        reply_markup=InlineKeyboardMarkup(keyboard)
+    )
     user_name = m.from_user.first_name if m.from_user else 'User'
     keyboard = [
         [InlineKeyboardButton("👑 OWNER", url="https://t.me/Aublic")],  # Owner button JPG ke niche
@@ -50,12 +56,7 @@ Note : App with Star Indicator Not For Public.
 
 Managed By : @Aublic
 """
-    await bot.send_photo(
-        m.chat.id,
-        photo="https://i.ibb.co/cSyLcHNz/Chat-GPT-Image-Jun-3-2025-03-16-31-PM.png",
-        caption=caption,
-        reply_markup=InlineKeyboardMarkup(keyboard)
-    )
+    
 
 @stark.on_message(filters.command(["restart"]) & ~filters.edited)
 async def restart_handler(_, m):
