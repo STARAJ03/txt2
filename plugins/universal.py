@@ -1,4 +1,6 @@
-import os, requests, json, cloudscraper
+import os
+import requests
+import cloudscraper
 from pyrogram.types import Message
 from pyrogram import Client
 from plugins.decoder import decode
