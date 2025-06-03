@@ -2412,11 +2412,3 @@ ACADEMY_HOSTS = {
 
 }
 
-def search_apis(search_term: str):
-    """Return list of (app_name, api_url) matching search_term (case-insensitive)."""
-    search_term = search_term.lower()
-    results = []
-    for app_name, api_url in ACADEMY_HOSTS.items():
-        if search_term in app_name.lower():
-            results.append((app_name, api_url))
-    return results
