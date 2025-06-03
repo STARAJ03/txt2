@@ -1,68 +1,43 @@
 from pyrogram import filters
 from pyrogram import Client as stark
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-from main import LOGGER, prefixes, AUTH_USERS
-from config import Config
-import os
-import sys
+from pyrogram.types import Message
 
-@stark.on_message(filters.command(["start"]) & ~filters.edited)
-async def Start_msg(bot: stark , m: Message):
+
+@stark.on_message(filters.command(["start"]))
+async def Start_msg(bot: stark, m: Message):
+    user_name = m.from_user.first_name if m.from_user else 'User'
+    caption = (f"Hello {user_name}\n"
+               "I'm a Powerful TXT Extractor Bot.\n"
+               "For more details, send /help..\n\n"
+               "Managed By : @Aublic\n\n"
+               "Choose an app below 👇")
     await bot.send_photo(
         m.chat.id,
-        photo="https://i.ibb.co/cSyLcHNz/Chat-GPT-Image-Jun-3-2025-03-16-31-PM.png",
-        caption=caption,
-        reply_markup=InlineKeyboardMarkup(keyboard)
+        photo=
+        "https://i.ibb.co/cSyLcHNz/Chat-GPT-Image-Jun-3-2025-03-16-31-PM.png",
+        caption=caption)
+
+
+@stark.on_message(filters.command(["help"]))
+async def help_msg(bot: stark, m: Message):
+    help_text = (
+        "📝 **Bot Commands Overview**\n\n"
+        "• **/pw** – Physics Wallah\n"
+        "• **/e1** – E1 Coaching App\n"
+        "• **/vidya** – Vidya Bihar App\n"
+        "• **/ocean** – Ocean Gurukul App\n"
+        "• **/winners** – The Winners Institute\n"
+        "• **/rgvikramjeet** – Rgvikramjeet App\n"
+        "• **/txt** – Ankit With Rojgar, The Mission Institute, The Last Exam App\n"
+        "• **/cp** – Classplus App\n"
+        "• **/cw** – Careerwill App\n"
+        "• **/khan** – Khan Gs App\n"
+        "• **/exampur** – Exampur App\n"
+        "• **/samyak** – Samyak IAS\n"
+        "• **/chandra** – Chandra App\n"
+        "• **/mgconcept** – MG Concept App\n"
+        "• **/down** – Downloading URL lists\n"
+        "• **/forward** – Forward from one channel to others\n\n"
+        "**Usage:**\nSend the command as per your requirement to start extraction from that app."
     )
-    user_name = m.from_user.first_name if m.from_user else 'User'
-    keyboard = [
-        [InlineKeyboardButton("👑 OWNER", url="https://t.me/Aublic")],  # Owner button JPG ke niche
-        [
-            InlineKeyboardButton("Physics Wallah", callback_data="pw"),
-            InlineKeyboardButton("E1 Coaching App", callback_data="e1"),
-        ],
-        [
-            InlineKeyboardButton("Vidya Bihar App", callback_data="vidya"),
-            InlineKeyboardButton("Ocean Gurukul App", callback_data="ocean"),
-        ],
-        [
-            InlineKeyboardButton("The Winners Institute", callback_data="winners"),
-            InlineKeyboardButton("Rgvikramjeet App", callback_data="rgvikramjeet"),
-        ],
-        [
-            InlineKeyboardButton("Ankit With Rojgar", callback_data="txt"),
-            InlineKeyboardButton("Classplus App", callback_data="cp"),
-        ],
-        [
-            InlineKeyboardButton("Careerwill App", callback_data="cw"),
-            InlineKeyboardButton("Khan Gs App", callback_data="khan"),
-        ],
-        [
-            InlineKeyboardButton("Exampur App", callback_data="exampur"),
-            InlineKeyboardButton("Samyak IAS", callback_data="samyak"),
-        ],
-        [
-            InlineKeyboardButton("Chandra App", callback_data="chandra"),
-            InlineKeyboardButton("MG Concept App", callback_data="mgconcept"),
-        ],
-        [
-            InlineKeyboardButton("Download URL lists", callback_data="down"),
-            InlineKeyboardButton("Forward", callback_data="forward"),
-        ],
-    ]
-    caption = f"""Hello {user_name}
-I'm a Powerful TXT Extractor Bot.
-Note : App with Star Indicator Not For Public.
-
-Managed By : @Aublic
-"""
-    
-
-@stark.on_message(filters.command(["restart"]) & ~filters.edited)
-async def restart_handler(_, m):
-    await m.reply_text("Restarted!", True)
-    os.execl(sys.executable, sys.executable, *sys.argv)
-
-@stark.on_message(filters.command(["log"]) & ~filters.edited)
-async def log_msg(bot: stark , m: Message):   
-    await bot.send_document(m.chat.id, "log.txt")
+    await m.reply_text(help_text)
