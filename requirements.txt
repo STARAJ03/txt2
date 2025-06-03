@@ -1,19 +1,22 @@
 pyrogram==2.0.106
 tgcrypto==1.2.5
 pyromod==1.5
+
 requests==2.31.0
 certifi==2023.5.7
 charset-normalizer==3.1.0
 idna==3.4
+
 mutagen==1.46.0
 pyaes==1.6.1
 ffmpeg-python
 pymediainfo
 PySocks==1.7.1
 python-dotenv==1.0.0
+
 cloudscraper
-beautifulsoup4==4.9.3
-bs4==0.0.1
+beautifulsoup4==4.9.3  # ✅ contains bs4, so remove bs4 line below
+
 aiohttp==3.8.4
 aiofiles
 yt-dlp==2023.6.22
@@ -26,6 +29,9 @@ pytz
 umongo==3.1.0
 speedtest-cli
 jinja2
-aiohttp
-crypto
 flask
+
+# ❌ Removed:
+# bs4==0.0.1        → not needed, already included in beautifulsoup4
+# aiohttp (duplicate)
+# crypto            → ambiguous, could conflict with pycryptodome
