@@ -1,0 +1,28 @@
+
+{
+    "name": "@Aublicxtxt_uploder_bot",
+    "description": "Aublicxtxt_uploder_bot",
+    "repository": "",
+    "keywords": [
+        "telegram bot",
+        "pyrogram"
+    ],
+    "env": {
+            "API_ID": {
+            "description": "Your API_ID from https://my.telegram.org/apps",
+            "value": "",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Your API_HASH from https://my.telegram.org/apps",       
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "",
+            "value": "",
+            "required": true
+        }
+    }
+
+}

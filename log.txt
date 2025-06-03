@@ -1,0 +1,275 @@
+pyrogram.connection.connection - Connecting...
+pyrogram.connection.connection - Connected! Production DC5 - IPv4
+pyrogram.session.session - NetworkTask started
+pyrogram.session.session - Session initialized: Layer 158
+pyrogram.session.session - Device: CPython 3.12.7 - Pyrogram 2.0.106
+pyrogram.session.session - System: Linux 6.2.16 (en)
+pyrogram.session.session - Session started
+pyrogram.session.session - PingTask started
+pyrogram.session.session - PingTask stopped
+pyrogram.session.session - NetworkTask stopped
+pyrogram.connection.connection - Disconnected
+pyrogram.session.session - Session stopped
+pyrogram.session.auth - Start creating a new auth key on DC2
+pyrogram.connection.connection - Connecting...
+pyrogram.connection.connection - Connected! Production DC2 - IPv4
+pyrogram.session.auth - Done auth key exchange: DhGenOk
+pyrogram.connection.connection - Disconnected
+pyrogram.connection.connection - Connecting...
+pyrogram.connection.connection - Connected! Production DC2 - IPv4
+pyrogram.session.session - NetworkTask started
+pyrogram.session.session - Session initialized: Layer 158
+pyrogram.session.session - Device: CPython 3.12.7 - Pyrogram 2.0.106
+pyrogram.session.session - System: Linux 6.2.16 (en)
+pyrogram.session.session - Session started
+pyrogram.session.session - PingTask started
+pyrogram.session.session - PingTask stopped
+pyrogram.session.session - NetworkTask stopped
+pyrogram.connection.connection - Disconnected
+pyrogram.session.session - Session stopped
+pyrogram.session.auth - Start creating a new auth key on DC5
+pyrogram.connection.connection - Connecting...
+pyrogram.connection.connection - Connected! Production DC5 - IPv4
+pyrogram.session.auth - Done auth key exchange: DhGenOk
+pyrogram.connection.connection - Disconnected
+pyrogram.connection.connection - Connecting...
+pyrogram.connection.connection - Connected! Production DC5 - IPv4
+pyrogram.session.session - NetworkTask started
+pyrogram.session.session - Session initialized: Layer 158
+pyrogram.session.session - Device: CPython 3.12.7 - Pyrogram 2.0.106
+pyrogram.session.session - System: Linux 6.2.16 (en)
+pyrogram.session.session - Session started
+pyrogram.session.session - PingTask started
+pyrogram.connection.connection - Connecting...
+pyrogram.connection.connection - Connected! Production DC5 - IPv4
+pyrogram.session.session - NetworkTask started
+pyrogram.session.session - Session initialized: Layer 158
+pyrogram.session.session - Device: CPython 3.12.7 - Pyrogram 2.0.106
+pyrogram.session.session - System: Linux 6.2.16 (en)
+pyrogram.session.session - Session started
+pyrogram.session.session - PingTask started
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("Start_msg") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("restart_handler") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("log_msg") in group 0 from "plugins.__init__"
+pyrogram.connection.connection - Connecting...
+pyrogram.connection.connection - Connected! Production DC5 - IPv4
+pyrogram.session.session - NetworkTask started
+pyrogram.session.session - Session initialized: Layer 158
+pyrogram.session.session - Device: CPython 3.12.7 - Pyrogram 2.0.106
+pyrogram.session.session - System: Linux 6.2.16 (en)
+pyrogram.session.session - Session started
+pyrogram.session.session - PingTask started
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("Start_msg") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("restart_handler") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("log_msg") in group 0 from "plugins.__init__"
+pyrogram.connection.connection - Connecting...
+pyrogram.connection.connection - Connected! Production DC5 - IPv4
+pyrogram.session.session - NetworkTask started
+pyrogram.session.session - Session initialized: Layer 158
+pyrogram.session.session - Device: CPython 3.12.7 - Pyrogram 2.0.106
+pyrogram.session.session - System: Linux 6.2.16 (en)
+pyrogram.session.session - Session started
+pyrogram.session.session - PingTask started
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("Start_msg") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("restart_handler") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("log_msg") in group 0 from "plugins.__init__"
+pyrogram.connection.connection - Connecting...
+pyrogram.connection.connection - Connected! Production DC5 - IPv4
+pyrogram.session.session - NetworkTask started
+pyrogram.session.session - Session initialized: Layer 158
+pyrogram.session.session - Device: CPython 3.12.7 - Pyrogram 2.0.106
+pyrogram.session.session - System: Linux 6.2.16 (en)
+pyrogram.session.session - Session started
+pyrogram.session.session - PingTask started
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("Start_msg") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("restart_handler") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("log_msg") in group 0 from "plugins.__init__"
+pyrogram.connection.connection - Connecting...
+pyrogram.connection.connection - Connected! Production DC5 - IPv4
+pyrogram.session.session - NetworkTask started
+pyrogram.session.session - Session initialized: Layer 158
+pyrogram.session.session - Device: CPython 3.12.7 - Pyrogram 2.0.106
+pyrogram.session.session - System: Linux 6.2.16 (en)
+pyrogram.session.session - Session started
+pyrogram.session.session - PingTask started
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("Start_msg") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("restart_handler") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("log_msg") in group 0 from "plugins.__init__"
+pyrogram.connection.connection - Connecting...
+pyrogram.connection.connection - Connected! Production DC5 - IPv4
+pyrogram.session.session - NetworkTask started
+pyrogram.session.session - Session initialized: Layer 158
+pyrogram.session.session - Device: CPython 3.12.7 - Pyrogram 2.0.106
+pyrogram.session.session - System: Linux 6.2.16 (en)
+pyrogram.session.session - Session started
+pyrogram.session.session - PingTask started
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("Start_msg") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("restart_handler") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("log_msg") in group 0 from "plugins.__init__"
+pyrogram.connection.connection - Connecting...
+pyrogram.connection.connection - Connected! Production DC5 - IPv4
+pyrogram.session.session - NetworkTask started
+pyrogram.session.session - Session initialized: Layer 158
+pyrogram.session.session - Device: CPython 3.12.7 - Pyrogram 2.0.106
+pyrogram.session.session - System: Linux 6.2.16 (en)
+pyrogram.session.session - Session started
+pyrogram.session.session - PingTask started
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("Start_msg") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("restart_handler") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("log_msg") in group 0 from "plugins.__init__"
+pyrogram.connection.connection - Connecting...
+pyrogram.connection.connection - Connected! Production DC5 - IPv4
+pyrogram.session.session - NetworkTask started
+pyrogram.session.session - Session initialized: Layer 158
+pyrogram.session.session - Device: CPython 3.12.7 - Pyrogram 2.0.106
+pyrogram.session.session - System: Linux 6.2.16 (en)
+pyrogram.session.session - Session started
+pyrogram.session.session - PingTask started
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("Start_msg") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("restart_handler") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("log_msg") in group 0 from "plugins.__init__"
+pyrogram.connection.connection - Connecting...
+pyrogram.connection.connection - Connected! Production DC5 - IPv4
+pyrogram.session.session - NetworkTask started
+pyrogram.session.session - Session initialized: Layer 158
+pyrogram.session.session - Device: CPython 3.12.7 - Pyrogram 2.0.106
+pyrogram.session.session - System: Linux 6.2.16 (en)
+pyrogram.session.session - Session started
+pyrogram.session.session - PingTask started
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("Start_msg") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("restart_handler") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("log_msg") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.cp"
+pyrogram.connection.connection - Connecting...
+pyrogram.connection.connection - Connected! Production DC5 - IPv4
+pyrogram.session.session - NetworkTask started
+pyrogram.session.session - Session initialized: Layer 158
+pyrogram.session.session - Device: CPython 3.12.7 - Pyrogram 2.0.106
+pyrogram.session.session - System: Linux 6.2.16 (en)
+pyrogram.session.session - Session started
+pyrogram.session.session - PingTask started
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("Start_msg") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("restart_handler") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("log_msg") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.cp"
+pyrogram.connection.connection - Connecting...
+pyrogram.connection.connection - Connected! Production DC5 - IPv4
+pyrogram.session.session - NetworkTask started
+pyrogram.session.session - Session initialized: Layer 158
+pyrogram.session.session - Device: CPython 3.12.7 - Pyrogram 2.0.106
+pyrogram.session.session - System: Linux 6.2.16 (en)
+pyrogram.session.session - Session started
+pyrogram.session.session - PingTask started
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("Start_msg") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("restart_handler") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("log_msg") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.cp"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.cpd"
+pyrogram.connection.connection - Connecting...
+pyrogram.connection.connection - Connected! Production DC5 - IPv4
+pyrogram.session.session - NetworkTask started
+pyrogram.session.session - Session initialized: Layer 158
+pyrogram.session.session - Device: CPython 3.12.7 - Pyrogram 2.0.106
+pyrogram.session.session - System: Linux 6.2.16 (en)
+pyrogram.session.session - Session started
+pyrogram.session.session - PingTask started
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("Start_msg") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("restart_handler") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("log_msg") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.cp"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.cpd"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.cw"
+pyrogram.connection.connection - Connecting...
+pyrogram.connection.connection - Connected! Production DC5 - IPv4
+pyrogram.session.session - NetworkTask started
+pyrogram.session.session - Session initialized: Layer 158
+pyrogram.session.session - Device: CPython 3.12.7 - Pyrogram 2.0.106
+pyrogram.session.session - System: Linux 6.2.16 (en)
+pyrogram.session.session - Session started
+pyrogram.session.session - PingTask started
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("Start_msg") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("restart_handler") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("log_msg") in group 0 from "plugins.__init__"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.cp"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.cpd"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.cw"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.e1"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.exampur"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("forward") in group 0 from "plugins.forward"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.khan"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.mgconcept"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.ocean"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.pw"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.rjvikramjeet"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account") in group 0 from "plugins.sam"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.txt"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.vidya"
+pyrogram.client - [StarkBot] [LOAD] MessageHandler("account_login") in group 0 from "plugins.winners"
+pyrogram.client - [StarkBot] Successfully loaded 18 plugins from "plugins"
+pyrogram.dispatcher - Started 50 HandlerTasks
+__main__ - <--- @Aublicxtxt_uploder_bot Started (c) STARKBOT --->
+pyrogram.dispatcher - list index out of range
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/nix/store/nb21sc3npfc8gvazwnrjxpvb5d48jysx-python3-3.12.7/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/nb21sc3npfc8gvazwnrjxpvb5d48jysx-python3-3.12.7/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/nb21sc3npfc8gvazwnrjxpvb5d48jysx-python3-3.12.7/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/runner/workspace/plugins/rjvikramjeet.py", line 83, in account_login
+    info["password"] = raw_text.split("*")[1]
+                       ~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+pyrogram.dispatcher - list index out of range
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/nix/store/nb21sc3npfc8gvazwnrjxpvb5d48jysx-python3-3.12.7/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/nb21sc3npfc8gvazwnrjxpvb5d48jysx-python3-3.12.7/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/nb21sc3npfc8gvazwnrjxpvb5d48jysx-python3-3.12.7/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/runner/workspace/plugins/rjvikramjeet.py", line 83, in account_login
+    info["password"] = raw_text.split("*")[1]
+                       ~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+pyrogram.dispatcher - list index out of range
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/nix/store/nb21sc3npfc8gvazwnrjxpvb5d48jysx-python3-3.12.7/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/nb21sc3npfc8gvazwnrjxpvb5d48jysx-python3-3.12.7/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/nb21sc3npfc8gvazwnrjxpvb5d48jysx-python3-3.12.7/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/runner/workspace/.pythonlibs/lib/python3.12/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/runner/workspace/plugins/txt.py", line 78, in account_login
+    info["password"] = raw_text.split("*")[1]
+                       ~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+root - Stop signal received (SIGINT). Exiting...
+__main__ - <---Bot Stopped-->
