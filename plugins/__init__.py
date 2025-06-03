@@ -6,41 +6,62 @@ from config import Config
 import os
 import sys
 
+@stark.on_message(filters.command(["start"]) & ~filters.edited)
+async def Start_msg(bot: stark , m: Message):
+    user_name = m.from_user.first_name if m.from_user else 'User'
+    keyboard = [
+        [InlineKeyboardButton("👑 OWNER", url="https://t.me/Aublic")],  # Owner button JPG ke niche
+        [
+            InlineKeyboardButton("Physics Wallah", callback_data="pw"),
+            InlineKeyboardButton("E1 Coaching App", callback_data="e1"),
+        ],
+        [
+            InlineKeyboardButton("Vidya Bihar App", callback_data="vidya"),
+            InlineKeyboardButton("Ocean Gurukul App", callback_data="ocean"),
+        ],
+        [
+            InlineKeyboardButton("The Winners Institute", callback_data="winners"),
+            InlineKeyboardButton("Rgvikramjeet App", callback_data="rgvikramjeet"),
+        ],
+        [
+            InlineKeyboardButton("Ankit With Rojgar", callback_data="txt"),
+            InlineKeyboardButton("Classplus App", callback_data="cp"),
+        ],
+        [
+            InlineKeyboardButton("Careerwill App", callback_data="cw"),
+            InlineKeyboardButton("Khan Gs App", callback_data="khan"),
+        ],
+        [
+            InlineKeyboardButton("Exampur App", callback_data="exampur"),
+            InlineKeyboardButton("Samyak IAS", callback_data="samyak"),
+        ],
+        [
+            InlineKeyboardButton("Chandra App", callback_data="chandra"),
+            InlineKeyboardButton("MG Concept App", callback_data="mgconcept"),
+        ],
+        [
+            InlineKeyboardButton("Download URL lists", callback_data="down"),
+            InlineKeyboardButton("Forward", callback_data="forward"),
+        ],
+    ]
+    caption = f"""Hello {user_name}
+I'm a Powerful TXT Extractor Bot.
+Note : App with Star Indicator Not For Public.
 
-@stark.on_message(filters.command(["start"]))
-async def Start_msg(bot: stark, m: Message):
+Managed By : @Aublic
+"""
     await bot.send_photo(
         m.chat.id,
-        photo="https://telegra.ph/file/cef3ef6ee69126c23bfe3.jpg",
-        caption=(
-            "**Hi I am All in One Extractor Bot**.\n"
-            "Press **/pw** for **Physics Wallah**..\n\n"
-            "Press **/e1** for **E1 Coaching App**..\n\n"
-            "Press **/vidya** for **Vidya Bihar App**..\n\n"
-            "Press **/ocean** for **Ocean Gurukul App**..\n\n"
-            "Press **/winners** for **The Winners Institute**..\n\n"
-            "Press **/rgvikramjeet** for **Rgvikramjeet App**..\n\n"
-            "Press **/txt** for  **Ankit With Rojgar,**\n**The Mission Institute,**\n**The Last Exam App**..\n\n"
-            "Press **/cp** for **Classplus App**..\n\n"
-            "Press **/cw** for **Careerwill App**..\n\n"
-            "Press **/khan** for **Khan GS App**..\n\n"
-            "Press **/exampur** for **Exampur App**..\n\n"
-            "Press **/samyak** for **Samyak IAS**..\n\n"
-            "Press **/chandra** for **Chandra App**..\n\n"
-            "Press **/mgconcept** for **MG Concept App**..\n\n"
-            "Press **/down** for **Downloading URL lists**..\n\n"
-            "Press **/forward** to **Forward from one channel to others**..\n\n"
-            "**𝗕𝗼𝘁 𝗢𝘄𝗻𝗲𝗿 : @Aublic**"
-        )
+        photo="https://i.ibb.co/cSyLcHNz/Chat-GPT-Image-Jun-3-2025-03-16-31-PM.png",
+        caption=caption,
+        reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
-
-@stark.on_message(filters.command(["restart"]) & filters.create(lambda _, __, msg: not msg.edit_date))
+@stark.on_message(filters.command(["restart"]) & ~filters.edited)
 async def restart_handler(_, m):
     await m.reply_text("Restarted!", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
-
-@stark.on_message(filters.command(["log"]) & filters.create(lambda _, __, msg: not msg.edit_date))
-async def log_msg(bot: stark, m: Message):   
+@stark.on_message(filters.command(["log"]) & ~filters.edited)
+async def log_msg(bot: stark , m: Message):   
     await bot.send_document(m.chat.id, "log.txt")
