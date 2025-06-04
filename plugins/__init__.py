@@ -3,21 +3,6 @@ from pyrogram import Client as stark
 from pyrogram.types import Message
 
 
-@stark.on_message(filters.command(["start"]))
-async def Start_msg(bot: stark, m: Message):
-    user_name = m.from_user.first_name if m.from_user else 'User'
-    caption = (f"Hello {user_name}\n"
-               "I'm a Powerful TXT Extractor Bot.\n"
-               "For more details, send /help..\n\n"
-               "Managed By : @Aublic\n\n"
-               "Choose an app below 👇")
-    await bot.send_photo(
-        m.chat.id,
-        photo=
-        "https://i.ibb.co/cSyLcHNz/Chat-GPT-Image-Jun-3-2025-03-16-31-PM.png",
-        caption=caption)
-
-
 @stark.on_message(filters.command(["help"]))
 async def help_msg(bot: stark, m: Message):
     help_text = (
