@@ -5,7 +5,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 async def start_handler(bot, message: Message):
     user = message.from_user.first_name
     await message.reply_photo(
-        photo="https://graph.org/file/65011e2bb4f7879f8ee1d.jpg",  # replace with your thumbnail link
+        photo="https://i.ibb.co/cSyLcHNz/Chat-GPT-Image-Jun-3-2025-03-16-31-PM.png",  # replace with your thumbnail link
         caption=(
             f"**Hello {user}** 👋\n"
             "I'm a Powerful TXT Extractor Bot.\n"
