@@ -1,4 +1,5 @@
 from pyrogram import Client, filters
+from appx_api import ACADEMY_HOSTS
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 @Client.on_message(filters.command("start") & filters.private)
@@ -24,7 +25,8 @@ async def start_handler(bot, message: Message):
         ])
     )
 
-# Callback handler to route button clicks
+# import karo function
+
 @Client.on_callback_query()
 async def handle_callback(bot, callback):
     data = callback.data
@@ -44,9 +46,16 @@ async def handle_callback(bot, callback):
         await bot.send_message(callback.from_user.id, 
             "🔍 Please send the **App Name** you want to search.\n\nFormat: `Exampur`")
 
+        input2 = await bot.listen(callback.from_user.id)
+        app_name = input2.text.strip()
+        await input2.delete()
+
+        result = find_api_host(app_name)
+        await bot.send_message(callback.from_user.id, result)
+
     elif data == "otp_login":
         await callback.message.delete()
         from plugins.otp_login import otp_login_flow
         await otp_login_flow(bot, callback.message)
 
-    await callback.answer()
+    await callback.answer() 
