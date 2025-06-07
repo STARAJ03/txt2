@@ -1,7 +1,8 @@
+from dotenv import load_dotenv
 import os
 
-class Config(object):
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    API_ID = int(os.environ.get("API_ID", ""))          # Default 0 agar set nahi ho to
-    API_HASH = os.environ.get("API_HASH", "")
-    AUTH_USERS = os.environ.get("AUTH_USERS", "7360968885")        # Comma separated user IDs, e.g. "123456,7891011"
+load_dotenv()  # .env file load karne ke liye
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+API_ID = int(os.getenv("API_ID"))
+API_HASH = os.getenv("API_HASH")
