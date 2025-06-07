@@ -12,7 +12,11 @@ async def master_appx(bot, message: Message):
         "If you don't know the Appx API URL, use the 'Find Appx URL' button below.",
         reply_markup=InlineKeyboardMarkup(buttons)
     )
-    input1 = await bot.listen(message.chat.id)
-    api_url = input1.text.strip()
-    await input1.delete()
+    try:
+        input1 = await bot.listen(message.chat.id)
+        api_url = input1.text.strip()
+        await input1.delete()
+    except Exception:
+        return await message.reply_text("❌ Failed to read API URL input.")
+
     await account_login(bot, message, api_url)
