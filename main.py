@@ -28,6 +28,7 @@ import asyncio, logging
 import tgcrypto
 from pyromod import listen
 from logging.handlers import RotatingFileHandler
+from plugins.appx_api import ACADEMY_HOSTS  # 🔗 Added for Find API integration
 
 LOGGER = logging.getLogger(__name__)
 logging.basicConfig(
@@ -59,16 +60,15 @@ if __name__ == "__main__" :
         plugins=plugins,
         workers = 50
     )
-    
+
     async def main():
         await bot.start()
         bot_info  = await bot.get_me()
         LOGGER.info(f"<--- @{bot_info.username} Started (c) STARKBOT --->")
         await idle()
-    
+
     asyncio.get_event_loop().run_until_complete(main())
     LOGGER.info(f"<---Bot Stopped-->")
-
 
 
 # 🟢 Keep-alive for Replit/UptimeRobot (Flask)
