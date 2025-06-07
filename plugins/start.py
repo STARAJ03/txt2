@@ -1,12 +1,12 @@
 from pyrogram import Client, filters
-from appx_api import ACADEMY_HOSTS
+from appx_api import ACADEMY_HOSTS, find_api_host
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 @Client.on_message(filters.command("start") & filters.private)
 async def start_handler(bot, message: Message):
     user = message.from_user.first_name
     await message.reply_photo(
-        photo="https://i.ibb.co/cSyLcHNz/Chat-GPT-Image-Jun-3-2025-03-16-31-PM.png",  # replace with your thumbnail link
+        photo="https://i.ibb.co/cSyLcHNz/Chat-GPT-Image-Jun-3-2025-03-16-31-PM.png",
         caption=(
             f"**Hello {user}** 👋\n"
             "I'm a Powerful TXT Extractor Bot.\n"
@@ -25,8 +25,6 @@ async def start_handler(bot, message: Message):
         ])
     )
 
-# import karo function
-
 @Client.on_callback_query()
 async def handle_callback(bot, callback):
     data = callback.data
@@ -35,9 +33,12 @@ async def handle_callback(bot, callback):
         await callback.message.delete()
         await bot.send_message(callback.from_user.id, 
             "🔑 **Send Appx API URL:**\n\nIf you don't know it, click 'Find API' from the menu.")
-        input1 = await bot.listen(callback.from_user.id)
-        api_url = input1.text.strip()
-        await input1.delete()
+        try:
+            input1 = await bot.listen(callback.from_user.id)
+            api_url = input1.text.strip()
+            await input1.delete()
+        except Exception:
+            return await bot.send_message(callback.from_user.id, "❌ Failed to read API URL input.")
         from plugins.universal import account_login
         await account_login(bot, callback.message, api_url)
 
@@ -45,11 +46,12 @@ async def handle_callback(bot, callback):
         await callback.message.delete()
         await bot.send_message(callback.from_user.id, 
             "🔍 Please send the **App Name** you want to search.\n\nFormat: `Exampur`")
-
-        input2 = await bot.listen(callback.from_user.id)
-        app_name = input2.text.strip()
-        await input2.delete()
-
+        try:
+            input2 = await bot.listen(callback.from_user.id)
+            app_name = input2.text.strip()
+            await input2.delete()
+        except Exception:
+            return await bot.send_message(callback.from_user.id, "❌ Failed to read App Name input.")
         result = find_api_host(app_name)
         await bot.send_message(callback.from_user.id, result)
 
@@ -58,4 +60,4 @@ async def handle_callback(bot, callback):
         from plugins.otp_login import otp_login_flow
         await otp_login_flow(bot, callback.message)
 
-    await callback.answer() 
+    await callback.answer()
