@@ -2411,4 +2411,10 @@ ACADEMY_HOSTS = {
 
 
 }
-
+def find_api_host(query: str) -> str:
+    result = [
+        f"🔎 **{name}**\n`{url}`"
+        for name, url in ACADEMY_HOSTS.items()
+        if query.lower() in name.lower()
+    ]
+    return "\n\n".join(result) if result else "❌ No matching App found."
