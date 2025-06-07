@@ -2407,8 +2407,13 @@ ACADEMY_HOSTS = {
     "Zidacademyhisar": "https://zidacademyhisarapi.classx.co.in",
     "Zinmatt": "https://zinmattapi.classx.co.in",
     "Zitaenglishacademy": "https://zitaenglishacademyapi.classx.co.in",
-    "Zscore": "https://zscoreapi.classx.co.in",
-
-
+    "Zscore": "https://zscoreapi.classx.co.in", 
 }
 
+def find_api_host(query: str) -> str:
+    result = [
+        f"🔎 **{name}**\n`{url}`"
+        for name, url in ACADEMY_HOSTS.items()
+        if query.lower() in name.lower()
+    ]
+    return "\n\n".join(result) if result else "❌ No matching App found."
